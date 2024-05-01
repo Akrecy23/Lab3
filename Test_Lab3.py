@@ -21,10 +21,26 @@ def test_bubble_sort_descending():
 
     assert (result == test_arr)
 
-def test_bubble_sort_invalid():
-    result = []
-    input_arr = [64, 34, 25, 12, 22, 11, 90]
+def test_bubble_sort_invalid1():
+    result = ""
+    input_arr = [64, 34, 25, 12, 22, 11, 90, 91, 92, 93]
 
     result = Lab3.bubble_sort(input_arr, 3)
 
-    assert (result == [])
+    assert (result == 1)
+
+def test_bubble_sort_invalid2():
+    result = ""
+    input_arr = []
+
+    result = Lab3.bubble_sort(input_arr, 4)
+
+    assert (result == 0)
+
+def test_bubble_sort_invalid3():
+    result = ""
+    input_arr = [''] #variable in array is string aka not integer
+
+    result = Lab3.bubble_sort(input_arr, 5)
+
+    assert (result == 2)
