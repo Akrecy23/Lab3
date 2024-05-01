@@ -1,6 +1,6 @@
 import Lab2.bmi as bmi
 
-print ("Test_Lab2")
+print ("Test_Lab2.bmi")
 
 def test_bmi_normal_weight():
     input_height = 1.73
