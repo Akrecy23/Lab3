@@ -35,7 +35,7 @@ def get_employees_by_dept(department):
 
     # Add your implementation from here
     for item in employee_data:
-        if item["department"] == department:
+        if item["department"] == department: #in the range, if the "department" == department parameter
             result.append(item)
 
     return result
