@@ -12,9 +12,9 @@ def get_employees_by_age_range(age_lower_limit, age_upper_limit):
     result = []
 
     # check for age limits and append the item to result
-    for item in employee_data:
-        if int(item["age"]) > int(age_lower_limit) and int(item["age"]) < int(age_upper_limit):
-            result.append(item)
+    for item in employee_data: #lists denoted by {}
+        if int(item["age"]) > int(age_lower_limit) and int(item["age"]) < int(age_upper_limit): #if true
+            result.append(item) #Add selected {} into empty list (result)
 
     return result
 
@@ -24,7 +24,7 @@ def calculate_average_salary():
 
     #add your implementation to calculate here 
     for s in employee_data:
-        total += s["salary"]
+        total += s["salary"] #Cannot use average = sum()/len() cause is a loop that goes thru each indiv. data ONE AT A TIME
     
     average = total / len(employee_data)
 

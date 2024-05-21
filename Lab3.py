@@ -50,13 +50,13 @@ def main():
     arr = [64, 34, 25, 12, 22, 11, 90]
 
     # Sort in ascending order
-    result = bubble_sort(arr, SORT_ASCENDING)
+    result = bubble_sort(arr, SORT_ASCENDING) #or (arr, 0)
     print("\nSorted array in ascending order: ")
     print(result)
 
     # Sort in descending order
     print("Sorted array in descending order: ")
-    result = bubble_sort(arr, SORT_DESCENDING)
+    result = bubble_sort(arr, SORT_DESCENDING) #or (arr, 1)
     print(result)
 
 if __name__ == "__main__":

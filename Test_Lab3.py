@@ -1,14 +1,14 @@
-import Lab3
+import Lab3 #don't need as "xxx" since Lab3 is easy and fast to type
 
 print("Test_Lab3")
 
 
 def test_bubble_sort_ascending():
-    result = []
+    #result = []
     input_arr = [64, 34, 25, 12, 22, 11, 90]
     test_arr = [11, 12, 22, 25, 34, 64, 90]
 
-    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING) #or (input_array, 0)
 
     assert (result == test_arr)
 
@@ -17,7 +17,7 @@ def test_bubble_sort_descending():
     input_arr = [64, 34, 25, 12, 22, 11, 90]
     test_arr = [90, 64, 34, 25, 22, 12, 11]
 
-    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING) #or (input_array, 1)
 
     assert (result == test_arr)
 
